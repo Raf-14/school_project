@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whather Api</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <h1 class="First-Title">Whather App</h1>
+
+    <div class="card">
+        <!-- header iput -->
+        <div class="search-barre">
+            <input type="text" id="search-input" placeholder="Search for a city...">
+            <button id="search-button">
+                <img src="./images/search.png" alt="Search icon">
+            </button>
+        </div>
+
+        <!-- Error city  -->
+         <div id="error-message" class="error">
+            <p>City not found</p>
+         </div>
+
+         <!-- Current weather -->
+        <div id="weather" class="weather-info">
+            <img id="weather-icon" src="./images/rain.png" alt="Weather icon">
+            <h1 id="temp">22°</h1>
+            <h2 id="city-name">Ponton</h2>
+            <div class="weather-desc" id="weather-desc">
+                <!-- Hmidity percentage and image -->
+                <div class="col">
+                    <img src="./images/humidity.png" class="wheather-icon" alt="humidity icon">
+                    <div class="inside-col">
+                        <p id="humidity" class="humidity">85%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+       
+                <!-- Wind speed and image -->
+                 <div class="col">
+                    <img src="./images/wind.png" alt="wind icon">
+                    <div class="inside-col">
+                        <p id="wind-speed" class="wind-speed">2.57 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

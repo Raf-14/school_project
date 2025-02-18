@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-container">
+            <!-- start container -->
+            <div class="details">
+                <h1>Todo App</h1>
+                <p>Keep it up</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <!-- start number -->
+            <div class="start-numbers">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+
+          <!-- Form input and add button -->
+            <form id="taskForm" action="">
+                <input type="text" id="taskInput" placeholder="Add a task...">
+                <button type="submit" id="newTask">+</button>
+            </form>
+            <!-- List task -->
+             <ul id="task-list"></ul>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

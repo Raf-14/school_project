@@ -11,6 +11,7 @@ const checkWeather = async (city) => {
     if (response.status === 404) {
         document.querySelector('.error').style.display = "block";
         document.querySelector('#city-name').style.display = "none";
+        document.querySelector('#weather').style.display = "none";
         document.querySelector('#weather-icon').style.display = "none"
         document.querySelector('.weather-info').innerHTML = '';
     } else {

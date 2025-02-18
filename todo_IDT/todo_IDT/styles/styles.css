@@ -101,3 +101,64 @@ button {
 button:hover {
     background-color: var(--teal);
 }
+
+#tasks-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+    width: 100%;
+    list-style: none;
+}
+
+#tasks-list li {
+    background-color: var(--secondBg);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.taskItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--secondBg);
+}
+
+.taskItem .task {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.taskItem .task input {
+    width: 20px;
+    height: 20px;
+}
+
+.taskItem .icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.taskItem .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.taskItem .completed p {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: line-through;
+}

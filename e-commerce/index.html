@@ -22,14 +22,83 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="./index.html" class="nav__logo">
-                <i class="bx bxs-shopping-basgs nav__logo-icon">e-commerce</i>
+                <i class="bx bxs-shopping-bags nav__logo-icon">e-commerce</i>
             </a>
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <!-- HOME -->
+                     <li class="nav__item"><a href="./index.html" class="nav__link active-link">Home</a>
+                     </li>
+                     </li>
+                    <!-- Shop -->
+                     <li class="nav__item"><a href="./shop.html" class="nav__link">Shop</a>
+                     </li>
+                    <!-- Cart -->
+                     <li class="nav__item"><a href="./cart.html" class="nav__link">Cart</a>
+                     </li>
+                    <!-- Blog -->
+                     <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a>
+                     </li>
+                    <!-- Faq's -->
+                     <li class="nav__item"><a href="./faq.html" class="nav__link">Faq's</a>
+                     </li>
+                    <!-- Contact -->
+                     <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a>
+                     </li>
+                </ul>
+            </div>
+            <!-- nav button's -->
+             <div class="nav__btns">
+                <!-- Login icon -->
+                <div class="login__toggle" id="login-toggle">
+                    <i class="bx bx-user"></i>
+                </div>
+                <!-- shopping icon -->
+                 <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                 </div>
+                 <!-- nav toggle -->
+                  <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                  </div>
+             </div>
         </nav>
     </header>
 
     <!--=============== CART ===============-->
     <div class="cart" id="cart">
-        
+        <i class="bx bx-x xart-close"></i>
+        <h2 class="cart__title__center">My Cart</h2>
+        <!-- first cart container -->
+         <div class="cart__container">
+            <!-- First article -->
+             <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-1.png" alt="cart-1">
+                </div>
+                <!-- Cart details -->
+                 <div class="cart__details">
+                    <h3 class="cart__title">windebreraker</h3>
+                    <!-- cart amount -->
+                    <div class="cart__mount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                 </div>
+                
+             </article>
+         </div>
+         <!-- seconde cart container -->
     </div>
 
     <!--=============== LOGIN ===============-->

@@ -139,16 +139,94 @@ input {
 }
 
 /*=============== HEADER SECTION ===============*/
-
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
 
 /*=============== NAV ===============*/
+nav {
+    height: calc(--header-height) + 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+}
 
+.login__toggle,.nav__toggle, .nav__logo, .nav__shop {
+    color: var(--text-color);
+}
+.nav__logo {
+    text-transform: lowercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25px;
+}
+
+.nav__logo-icon {
+    font-size: 1.25rem;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-left: auto;
+}
+
+.nav__toggle, .login__toggle, .nav__shop{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.nav__link {
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__toggle {
+    display: none;
+}
 
 /* Change background header */
 
+/* .scroll-header {
+background-color: var(--body-color);
+box-shadow: 0 1px 4px var(--shadow);
+} */
 
 /* Active link */
-
+.active-link {
+    position: relative;
+}
+.active-link::before {
+    content: "";
+    position: absolute;
+    bottom: -0.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+}
 
 /*=============== MAIN ===============*/
 /*========== HOME SECTION ==========*/

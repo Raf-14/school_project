@@ -237,7 +237,32 @@ box-shadow: 0 1px 4px var(--shadow);
 
 
 /*=============== BUTTONS ===============*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+.button:hover {
+   background-color: var(--first-color-alt);
+}
 
+.button__icon {
+    font-size: 1.2rem;
+}
+
+.button--link {
+    font-size: var(--title-color);
+}
+
+.button--flex {
+    display: inline-block;
+    align-items: center;
+    column-gap: .5rem;
+}
 
 
 /*========== DISCOUNT SECTION ==========*/
@@ -296,11 +321,55 @@ box-shadow: 0 1px 4px var(--shadow);
 
 
 /*=============== LOGIN ===============*/
+.login {
+    position: fixed;
+    background-color: var(--body-color);
+    width: 420px;
+    box-shadow: -2px 0 4px var(--shadow);
+    z-index: var(--z-fixed);
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 3.5rem 2rem;
+    transition: .4s;
+}
+.login__close {
+    color: var(--title-color);
+    position: absolute;
+    top: 1rem;
+    right: .9rem;
+    cursor: pointer;
+}
 
+.login__form {
+    row-gap: 1.5rem;
+}
 
+.login__content {
+    background-color: var(--container-color);
+    border-radius: .5rem;
+    padding: .75rem;
+}
+
+.login__input {
+    color: var(--container-color);
+    font-size: var(--normal-font-size);
+    width: 100%;
+    padding: 0.25rem 0.5rem 0;
+}
+
+.signup {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+.signup a {
+    color: var(--first-color);
+}
 /* Show login */
-
-
+.show-login {
+    right: 0;
+}
 /*=============== CART ===============*/
 .cart {
     position: fixed;
@@ -404,6 +473,10 @@ box-shadow: 0 1px 4px var(--shadow);
 .cart__total-item {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+}
+
+.cart {
+    display: hidden;
 }
 /* Show cart */
 
